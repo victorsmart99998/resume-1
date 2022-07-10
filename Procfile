@@ -1,1 +1,1 @@
-web: gunicorn resume_builder_django.wsgi --log-file -
+web: gunicorn resume_builder.wsgi --log-file -
