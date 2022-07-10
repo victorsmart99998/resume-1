@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sucess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="icofont/icofont/icofont.min.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body class="body2">
+ <nav  class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top py-3 shadow-lg shadow-light">
+        <div class="container">
+            <!-- Navbar-brand -->
+            <span class="navbar-brand main-text">RESUMEKing</span>
+
+            <!-- Navbar-toggler -->
+
+              <!-- <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#navmenu">
+                <span id="hello" class="navbar-toggler-icon"></span>
+              </button>
+                -->
+
+            <!-- Navbar-Menu -->
+            <div class="collapse navbar-collapse" id="navmenu" >
+                <ul  class="navbar-nav ms-auto" id="item" x-show="isOpen" >
+                    <li class="nav-item">
+                        <a id="links" class="btn btn-info m-1" target="_blank" href="{% url 'info' %}">BUILD MY RESUME</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    	<!-- Section One -->
+     <section class="bg-light text-dark p-3 p-lg-0 pt-lg-5 text-center text-sm-start mt-5 mb-5 ">
+        <div class="container p-1 p-sm-5">
+            <!-- Flex box -->
+            <div class="row" >
+              <div class="col-md text-center text-sm-start">
+                  <div data-aos="fade-left" class="m-4"  data-aos-duration="2000">
+                    <h1 class="main-text"><span class="text-info"> Online Resume Builder</span></h1>
+                    <p class="lead text-center text-sm-start text-md-start  my-4 welcome-text">
+
+                     Make a Job Winning Resume in Minutes With Our Simple Resume Builder<br>
+                       A Customizable, HR-approved, ready-to-use, Job-scoring Resume.
+                    </p>
+                    <div>
+                      <a id="links" class="btn btn-info m-1" target="_blank" href="{% url 'info' %}">BUILD MY RESUME</a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+</body>
+</html>
